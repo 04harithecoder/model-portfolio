@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Maximalist single-page portfolio of Hariharan Vijayan featuring skills, projects, and contact links."
+    />
+    <title>HARIHARAN VIJAYAN's WORLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+      EDITABLE PERSONAL INFO:
+      - Name: "Hariharan Vijayan"
+      - Intro text in .hero-intro
+      - Email, GitHub, LinkedIn links in #contact
+      - Project URLs: replace each href="#" in #projects
+    -->
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Go to top">HV / PORTFOLIO</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="site-menu" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container section reveal">
+        <p class="sticker">Open for Internships</p>
+        <h1>
+          Hello, I’m <span>Hariharan Vijayan</span>
+        </h1>
+        <p class="hero-intro">
+          Computer Science student passionate about building useful digital
+          experiences, experimenting with technology, and turning ideas into
+          working projects.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View My Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-decor" aria-hidden="true">
+          <div class="shape shape-one"></div>
+          <div class="shape shape-two"></div>
+          <div class="shape shape-three"></div>
+          <p class="float-label one">BUILD FAST</p>
+          <p class="float-label two">LEARN DAILY</p>
+        </div>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <h2>ABOUT ME</h2>
+        <article class="about-card">
+          <p>
+            I enjoy software development, web technologies, and solving real
+            problems through practical projects. I’m always exploring new tools
+            and improving the way I design, build, and ship digital products.
+          </p>
+          <div class="about-tags" aria-label="About labels">
+            <span>BUILD</span>
+            <span>LEARN</span>
+            <span>CREATE</span>
+            <span>EXPLORE</span>
+          </div>
+        </article>
+      </section>
+
+      <section id="skills" class="container section reveal">
+        <h2>MY SKILLS</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Database</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>MariaDB</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section reveal">
+        <h2>SELECTED PROJECTS</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Color Picker Web Application</h3>
+            <p>Interactive color utility to generate, copy, and save palettes.</p>
+            <div class="tech-tags"><span>React</span></div>
+            <a href="#" class="btn btn-tertiary" aria-label="View project: Color Picker Web Application">View Project</a>
+          </article>
+          <article class="project-card">
+            <h3>College Complaint Management System</h3>
+            <p>Tracks student concerns with category-based issue workflow.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>Python Flask</span><span>MySQL</span>
+            </div>
+            <a href="#" class="btn btn-tertiary" aria-label="View project: College Complaint Management System">View Project</a>
+          </article>
+          <article class="project-card">
+            <h3>MEDAI</h3>
+            <p>Medical engagement and dosage adherence intelligence platform.</p>
+            <div class="tech-tags"><span>React</span><span>Django</span><span>MySQL</span></div>
+            <a href="#" class="btn btn-tertiary" aria-label="View project: MEDAI">View Project</a>
+          </article>
+          <article class="project-card">
+            <h3>Student Management System</h3>
+            <p>Desktop system for managing student profiles and records.</p>
+            <div class="tech-tags"><span>Python Custom Tkinter</span><span>MariaDB</span></div>
+            <a href="#" class="btn btn-tertiary" aria-label="View project: Student Management System">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section reveal">
+        <h2>LET’S CONNECT</h2>
+        <p class="contact-subtitle">Have an idea? Let’s build something.</p>
+        <div class="contact-card">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:720hariharanoffl@gmail.com">720hariharanoffl@gmail.com</a>
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/04harithecoder" target="_blank" rel="noopener noreferrer"
+              >github.com/04harithecoder</a
+            >
+          </p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://linkedin.com/in/hariharan-vijayan-145812323"
+              target="_blank"
+              rel="noopener noreferrer"
+              >linkedin.com/in/hariharan-vijayan-145812323</a
+            >
+          </p>
+          <a class="btn btn-primary contact-btn" href="mailto:720hariharanoffl@gmail.com">Start a Conversation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>MADE WITH ❤️ BY HARIHARAN VIJAYAN</p>
+      <p>Built with HTML, CSS &amp; JavaScript. <span id="year"></span></p>
+      <div class="footer-links">
+        <a href="https://github.com/04harithecoder" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/hariharan-vijayan-145812323" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
